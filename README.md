@@ -1,9 +1,9 @@
-# NetViz
+# NetViz (R version)
 Lianna Hovhannisyan, Lynn Wu, Simon Guo, Nobby Nguyen 
 
 ## About 
 
-Hi! :wave: Welcome to the NetViz project! This project aims at building an interactive dashboard for :clapper:[Netflix movies data](https://www.kaggle.com/shivamb/netflix-shows). The dashboard can be accessed from [here](https://dsci532-2022-group3-netviz.herokuapp.com/).
+Hi! :wave: Welcome to the NetViz project! This project aims at building an interactive dashboard for :clapper:[Netflix movies data](https://www.kaggle.com/shivamb/netflix-shows). The dashboard can be accessed from [here](https://dsci532-2022-group3-netviz-r.herokuapp.com/).
 
 To learn about our project, jump straight to one of the sections below, or just scroll down to find out more.
 
@@ -24,7 +24,8 @@ NetViz provides some summarized information on Netflix movies given by the chose
 
 Here is a demo of the dashboard:
 
-![2022-03-03 23 14 05](https://user-images.githubusercontent.com/78331839/156862549-517b2400-f88e-49ef-887e-5ef1f446dc96.gif)
+# TODO
+
 
 ## Motivation behind project
 
@@ -42,19 +43,19 @@ If you wish to install and run NetViz from local, here are the steps.
 
 - In terminal, enter the following command:
 ```
-git clone https://github.com/UBC-MDS/netviz.git
+git clone https://github.com/UBC-MDS/netviz-R.git
 ```
 - Go to the netviz folder directory:
 ```
-cd netviz
+cd netviz-R/
 ```
-- Run the `app.py` file using python:
+- Run the `app.R` file in terminal:
 ```
-python3 app.py
+Rscript app.R
 ```
-- In the returning message, `ctrl+double click` or copy the website shown in the yellow box to open the dashboard:
+- In the returning message, copy the website shown to open the dashboard:
 
-![image](https://user-images.githubusercontent.com/78331839/156524652-f4279e6c-3827-4bff-917f-309e8bcba4e6.png)
+![image](https://user-images.githubusercontent.com/78331839/158541797-cdd349ed-6235-4c4f-8cb3-6622993deb94.png)
 
 ## Get involved
 
@@ -79,5 +80,3 @@ Main Contributors:
 ## License
 
 The `NetViz` app was created by Lianna Hovhannisyan, Simon Guo, Nobby Nguyen, Lynn Wu within the Master of Data Science program at the University of British Columbia (2021-2022). It is licensed under the terms of the MIT license.
-
-# netviz-R

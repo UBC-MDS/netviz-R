@@ -49,7 +49,7 @@ table <- function(genre) {
 rating_plot <- function(selected_genre) {
     plot_rating <- ggplot(movies %>% 
                               filter(genre==selected_genre)) +
-        aes(y = rating,
+        aes(y = forcats::fct_infreq(rating),
             fill = genre) +
         geom_bar(stat='count', show.legend =FALSE) +
         labs(title = paste0('Rating distribution of ', selected_genre), 
@@ -62,7 +62,8 @@ rating_plot <- function(selected_genre) {
 area_plot <- function(type) {
     p <- movies %>%
         filter(genre == type) %>%
-        ggplot(aes(x=release_year, color = genre)) +
+        ggplot(aes(x=release_year, 
+                   color = genre)) +
         geom_line(stat='count') +
         labs(title = paste0( 'Release year plot of ', type),
              x = "Year",
